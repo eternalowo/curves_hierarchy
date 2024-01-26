@@ -10,15 +10,18 @@ auto fill_vector_curves(std::vector<std::shared_ptr<Curve>>& cur) -> void {
 
     for (std::size_t i = 0; i < N; ++i) {
         auto type = static_cast<CurveType>(type_dist(gen));
-
-        if (type == CurveType::CIRCLE) {
-            cur.emplace_back(std::make_shared<Circle>(Circle(values_dist(gen))));
-        }
-        else if (type == CurveType::ELLIPSE) {
-            cur.emplace_back(std::make_shared<Ellipse>(Ellipse(values_dist(gen), values_dist(gen))));
-        }
-        else if (type == CurveType::HELIX) {
-            cur.emplace_back(std::make_shared<Helix>(Helix(values_dist(gen), values_dist(gen), values_dist(gen))));
+        switch (type) {
+            case CurveType::CIRCLE:
+                cur.emplace_back(std::make_shared<Circle>(Circle(values_dist(gen))));
+                break;
+            case CurveType::ELLIPSE:
+                cur.emplace_back(std::make_shared<Ellipse>(Ellipse(values_dist(gen), values_dist(gen))));
+                break;
+            case CurveType::HELIX:
+                cur.emplace_back(std::make_shared<Helix>(Helix(values_dist(gen), values_dist(gen), values_dist(gen))));
+                break;
+            default:
+                break;
         }
     }
 }

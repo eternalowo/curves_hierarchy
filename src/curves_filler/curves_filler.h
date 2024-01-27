@@ -4,9 +4,9 @@
 #include <vector>
 #include <random>
 
-#include <../circle/circle.h>
-#include <../ellipse/ellipse.h>
-#include <../helix/helix.h>
+#include "circle.h"
+#include "ellipse.h"
+#include "helix.h"
 
 namespace curves {
 

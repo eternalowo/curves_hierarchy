@@ -1,7 +1,7 @@
 ﻿#ifndef ELLIPSE_H_
 #define ELLIPSE_H_
 
-#include <../curve/curve_interface.h>
+#include "curve_interface.h"
 
 namespace curves {
 

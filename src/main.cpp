@@ -5,7 +5,7 @@
 
 #include <omp.h>
 
-#include <../curves_filler/curves_filler.h>
+#include "curves_filler.h"
 
 int main() {
     std::vector<std::shared_ptr<curves::Curve>> curves_vector {};

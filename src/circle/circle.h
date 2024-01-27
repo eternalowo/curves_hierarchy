@@ -1,12 +1,12 @@
 ﻿#ifndef CIRCLE_H_
 #define CIRCLE_H_
 
-#include <../curve/curve_interface.h>
+#include "curve_interface.h"
 
 namespace curves {
     
 class Circle : public Curve {
-    // Circle class, defined by its radius
+    // circle class, defined by its radius
 public:
     Circle(double radius) : Curve(radius, 0.0, 0.0) {}
     

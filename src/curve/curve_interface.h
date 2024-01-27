@@ -1,7 +1,7 @@
 ﻿#ifndef CURVE_INTERFACE_H_
 #define CURVE_INTERFACE_H_
 
-#include <../point/point.h>
+#include "point.h"
 
 namespace curves {
 

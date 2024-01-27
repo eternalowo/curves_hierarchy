@@ -4,7 +4,7 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
-#include <../curve/curve_interface.h>
+#include "curve_interface.h"
 
 namespace curves {
 

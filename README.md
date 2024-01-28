@@ -1,6 +1,6 @@
 <h1>3D Curves Hierarchy Implementation</h1>
 
-<h2>How to build project:</h3>
+<h2>How to generate project files:</h3>
 
 <h4>Requirements: </h4>
 <ul>
@@ -19,5 +19,5 @@
 <br>
 <code>cd ./build</code>
 
-<h3>Step 3. Build a project using CMake</h3>
+<h3>Step 3. Generate project files using CMake</h3>
 <code>cmake ..</code> 
